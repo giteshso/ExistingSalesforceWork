@@ -1,0 +1,10 @@
+<apex:page controller="PieChartDataController" sidebar="true" showHeader="true">  
+  <apex:chart rendered="true" animate="false" height="350" width="450" data="{!Record}">
+       <apex:pieSeries dataField="revenueInBillions" labelField="month">
+       <apex:chartLabel field="revenueInBillions" rotate="0"/>
+       <apex:chartTips height="40" width="100"/>
+       </apex:pieSeries>
+        
+       <apex:legend position="left" />
+  </apex:chart>
+</apex:page>
